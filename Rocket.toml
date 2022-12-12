@@ -1,0 +1,2 @@
+[default.databases.wallet_management]
+url = "postgresql://postgres:123456a%40@localhost:5432/wallet_management?schema=public"

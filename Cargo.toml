@@ -1,0 +1,29 @@
+[package]
+name = "rust-rocket-psql"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = {version = "0.5.0-rc.2", features = ["json"]}
+
+[dependencies.sqlx]
+version = "0.5.13"
+default-features = false
+features = ["uuid"]
+
+[dependencies.rocket_db_pools]
+version = "0.1.0-rc.2"
+features = ["sqlx_postgres"]
+
+[dependencies.uuid]
+version = "0.8"
+
+# [dependencies.postgres]
+# version = "0.19.4"
+# features=["with-uuid-0_8"]
+
+[dependencies.tokio-postgres]
+version="0.7.2"
+features=["with-uuid-0_8"]
